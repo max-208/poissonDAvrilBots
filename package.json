@@ -1,0 +1,22 @@
+{
+  "name": "poissondavrilbots",
+  "version": "1.0.0",
+  "description": "multiples bot en un",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/max-208/poissonDAvrilBots.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/max-208/poissonDAvrilBots/issues"
+  },
+  "homepage": "https://github.com/max-208/poissonDAvrilBots#readme",
+  "dependencies": {
+    "discord.js": "^12.5.1"
+  }
+}
