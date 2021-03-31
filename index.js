@@ -7,10 +7,16 @@ for (let i = 0; i < tokens.tokens.length; i++) {
     client.on('ready', () => {
         console.log("ready - " + client.user.username );
     })
+    
 
     client.on('message', message => {
         if(message.author.id == tokens.users[i]){
-            message.channel.send(message.content);
+            if(message.attachments.array().length > 0){
+                const attachement = new Discord.MessageAttachment(message.attachments.first().attachment)
+                message.channel.send(message.content + "\u200b",attachement);
+            } else {
+                message.channel.send(message.content);
+            }
             message.delete();
         }
     });
